@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to left, dodgerblue 40%, blue);
+        }
+
+        form {
+            width: 400px;
+            height: 400px;
+            background-color: rgba(0, 0, 0, 0.67);
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        div {
+            width: 250px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        label {
+            color: rgb(255, 243, 243);
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        input#inputUser, input#inputSenha {
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            padding: 4px;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid rgb(255, 255, 255);
+        }
+
+
+
+
+        input#btn {
+            background-color: dodgerblue;
+            border: none;
+            border-radius: 7px;
+            margin-top: 50px;
+            padding: 10px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        input#btn:hover {
+            background-color: rgb(70, 156, 241);
+            color: rgba(255, 255, 255, 0.649);
+        }
+
+    </style>
+</head>
+<body>
+    <form action="cadastro.javascript" method="get" autocomplete="off">
+        <div>
+            <label for="inputUser">Nome</label>
+            <input type="user" name="user" id="inputUser" required>
+
+            <label for="inputSenha">Senha</label>
+            <input type="password" required id="inputSenha">
+
+            <input type="submit" value="Enviar" id="btn">
+        </div>
+    </form>
+
+</body>
+</html>
