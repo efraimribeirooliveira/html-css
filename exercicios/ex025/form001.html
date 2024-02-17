@@ -69,13 +69,13 @@
     </style>
 </head>
 <body>
-    <form action="cadastro.javascript" method="get" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <div>
             <label for="inputUser">Nome</label>
-            <input type="user" name="user" id="inputUser" required>
+            <input type="user" name="user" id="inputUser" required minlength="5" maxlength="20">
 
             <label for="inputSenha">Senha</label>
-            <input type="password" required id="inputSenha">
+            <input type="password" required id="inputSenha" minlength="5" maxlength="30"">
 
             <input type="submit" value="Enviar" id="btn">
         </div>
